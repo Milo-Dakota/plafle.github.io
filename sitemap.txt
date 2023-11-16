@@ -1,3 +1,4 @@
+http://plafle.github.io/2023/11/16/11-26-07/
 http://plafle.github.io/2023/11/16/00-02-16/
 http://plafle.github.io/2023/07/12/00-00-00/
 http://plafle.github.io/2023/07/11/00-00-00/
@@ -33,3 +34,4 @@ http://plafle.github.io/tags/OI%E9%A2%98%E7%9B%AE%E8%AE%AD%E7%BB%83/
 http://plafle.github.io/tags/%E6%95%B0%E5%AD%A6/
 http://plafle.github.io/tags/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/
 http://plafle.github.io/tags/OI/
+http://plafle.github.io/tags/CS/
