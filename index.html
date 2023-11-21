@@ -287,10 +287,16 @@ mjx-container[display="true"] + br {
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-11-16 11:26:07 / 修改时间：23:15:11" itemprop="dateCreated datePublished" datetime="2023-11-16T11:26:07+08:00">2023-11-16</time>
+              <time title="创建时间：2023-11-16 11:26:07" itemprop="dateCreated datePublished" datetime="2023-11-16T11:26:07+08:00">2023-11-16</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-11-21 19:36:32" itemprop="dateModified" datetime="2023-11-21T19:36:32+08:00">2023-11-21</time>
+              </span>
 
           
 
@@ -435,6 +441,15 @@ mjx-container[display="true"] + br {
 <p>​    可以把本地<code>master</code>分支的最新修改推送至GitHub</p>
 <h5 id="4-断开本地库和远程库之间的连接"><a href="#4-断开本地库和远程库之间的连接" class="headerlink" title="4. 断开本地库和远程库之间的连接"></a>4. 断开本地库和远程库之间的连接</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote rm origin</span><br></pre></td></tr></table></figure>
 <p>用这个命令可以断开本地库和远程库之间的连接</p>
+<h3 id="3-在Vscode中使用Git"><a href="#3-在Vscode中使用Git" class="headerlink" title="3.在Vscode中使用Git"></a>3.在Vscode中使用Git</h3><h5 id="1-可能会遇到的第一个问题"><a href="#1-可能会遇到的第一个问题" class="headerlink" title="1.可能会遇到的第一个问题"></a>1.可能会遇到的第一个问题</h5><p>​    当你打开vscode的<code>source control</code>模块时，vscode可能会认为你还没有安装git，并建议你安装git。可是你明明已经安装过了git，于是你觉得很奇怪。这里的原因在于你还没有更改vscode的路径。具体方法如下：</p>
+<ul>
+<li>打开vscode，按下<code>ctrl</code> + <code>,</code>，在<code>settings</code>中打开搜索栏，搜索<code>git.path</code></li>
+<li>点击<code>Edit in settings.json</code>文件，进入这个<code>json</code>文件</li>
+<li>复制你的<code>git.exe</code>的路径，它应该长成<code>D:\application\Git\bin\git.exe</code>这样。把这个路径复制到那个<code>json</code>文件”git.path”后面</li>
+<li>把你复制的路径中的<code>\</code>全部改成<code>\\</code>，不然会报错</li>
+<li>最终应该长成这样：<code>&quot;git.path&quot;: &quot;D:\\application\\Git\\bin\\git.exe&quot;</code>（你的路径肯定跟我不一样）</li>
+<li>重启vscode</li>
+</ul>
 
       
     </div>
